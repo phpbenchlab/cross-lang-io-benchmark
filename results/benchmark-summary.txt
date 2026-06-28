@@ -1,0 +1,19 @@
+=== I/O Benchmark Summary ===
+PHP 8.5 vs Node.js vs Go vs Python (2026)
+50ms and 200ms database I/O latency, 100 concurrent users, 60 seconds
+
+50ms Latency:
+- PHP-FPM: 388.1 RPS, P99 264ms
+- PHP+Swoole: 1912.0 RPS, P99 62ms
+- Node.js: 393.4 RPS, P99 256ms
+- Go: 393.7 RPS, P99 914ms
+- Python: 392.5 RPS, P99 461ms
+
+200ms Latency:
+- PHP-FPM: 98.7 RPS, P99 1016ms
+- PHP+Swoole: 495.3 RPS, P99 208ms
+- Node.js: 99.0 RPS, P99 1008ms
+- Go: 108.4 RPS, P99 2001ms
+- Python: 98.9 RPS, P99 2600ms
+
+All values are averages of 3 runs.
